@@ -6,117 +6,141 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //    First first = new First();
-        //    Console.WriteLine("Введите x");
-        //    int x = Convert.ToInt32(Console.ReadLine());
-        //    Console.WriteLine(first.sumLastNums(x));
+        First first = new First();
+
+        //Console.WriteLine("Введите x для подсчёта суммы последних двух цифр");
+        //int number = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Сумма последних цифр числа {number}: {first.sumLastNums(number)}");
 
 
-        //Second second = new Second();
-        //Console.WriteLine("Введите число для проверки");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(second.isPositive(x));
+        //2
+        //Console.WriteLine("Введите число для проверки на положительность");
+        //int number = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Число {number} положительное? {first.isPositive(number)}");
 
-        //Third third = new Third();
-        //Console.WriteLine("Введите симовл x ");
+        //3
+        //Console.WriteLine("Введите симовл letter для проверки на заглавность");
         //string input = Console.ReadLine();
-        //char x = input[0];
-        //Console.WriteLine(third.isUpperCase(x));
+        //char letter = input[0];
+        //Console.WriteLine($"Символ '{letter}' заглавный? {first.isUpperCase(letter)}");
 
 
-        //Forth forth = new Forth();
+        //4
         //Console.WriteLine("Введите число a");
-        //int a = Convert.ToInt32(Console.ReadLine());
+        //int divisor = Convert.ToInt32(Console.ReadLine());
         //Console.WriteLine("Введите число b");
-        //int b = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(forth.isDivisor(a, b));
+        //int diviseble = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"{divisor} делится на {diviseble} без остатка? {first.isDivisor(divisor, diviseble)}");
 
-        //Five five = new Five();
-        //int a, b;
+        //5
+        //int number1, number2;
 
         //Console.WriteLine("Введите первое число для сложения");
-        //a = Convert.ToInt32(Console.ReadLine());
+        //number1 = Convert.ToInt32(Console.ReadLine());
 
         //Console.WriteLine("Введите второе число для сложения");
-        //b = Convert.ToInt32(Console.ReadLine());
-        //a = five.lustNumSum(a, b);
-        //Console.WriteLine(a);
+        //number2 = Convert.ToInt32(Console.ReadLine());
+        //number1 = first.lustNumSum(number1, number2);
+        //Console.WriteLine(number1);
 
         //Console.WriteLine("Введите третье число для сложения");
-        //b = Convert.ToInt32(Console.ReadLine());
-        //a = five.lustNumSum(a, b);
-        //Console.WriteLine(a);
+        //number2 = Convert.ToInt32(Console.ReadLine());
+        //number1 = first.lustNumSum(number1, number2);
+        //Console.WriteLine(number1);
 
         //Console.WriteLine("Введите четвертое число для сложения");
-        //b = Convert.ToInt32(Console.ReadLine());
-        //a = five.lustNumSum(a, b);
-        //Console.WriteLine(a);
+        //number2 = Convert.ToInt32(Console.ReadLine());
+        //number1 = first.lustNumSum(number1, number2);
+        //Console.WriteLine(number1);
 
         //Console.WriteLine("Введите четвертое число для сложения");
-        //b = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(five.lustNumSum(a, b));
+        //number2 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Сумма последних цифр: {first.lustNumSum(number1, number2)}");
 
 
-        //Six six = new Six();
+        //6
         //Console.WriteLine("Введите Делитель");
-        //int a = Convert.ToInt32(Console.ReadLine());
+        //int divisor = Convert.ToInt32(Console.ReadLine());
         //Console.WriteLine("Введите Делимое");
-        //int b = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(six.safeDiv(a,b));
+        //int diviseble = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Результат деления: {first.safeDiv(divisor, diviseble)}");
 
 
-        //Seven seven = new Seven();
+        //7
         //Console.WriteLine("Введите первое число для сравнения");
-        //int a = Convert.ToInt32(Console.ReadLine());
+        //int number1 = Convert.ToInt32(Console.ReadLine());
         //Console.WriteLine("Введите второе число для срванения");
-        //int b = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Результат сравнения : " + seven.makeDecision(a, b));
+        //int number2 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Результат сравнения: {first.makeDecision(number1, number2)}");
 
 
-        //Eight eight = new Eight();
-        //Console.WriteLine("Введите первое число для проверки условия");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Введите второе число для проверки условия");
-        //int y = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("Введите второе число для проверки условия");
-        //int z = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(eight.sum3(x, y, z));
+        //8
+        //Console.WriteLine("Введите x для проверки условия что x+y=z");
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Введите y для проверки условия что x+y=z ");
+        //int number2 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Введите z для проверки условия что x+y=z");
+        //int number3 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"Сумма: {first.sum3(number1, number2, number3)}");
 
-        //Nine nine = new Nine();
+        //9
         //Console.WriteLine("Введите число для правильной подстановки 'год', 'года' ,'лет'");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(nine.age(x));
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(first.age(number1));
 
 
-        //Ten ten = new Ten();
+        //10
         //Console.WriteLine("Введите день недели: ");
-        //string x = Console.ReadLine();
-        //ten.printDays(x);
+        //string day = Console.ReadLine();
+        //first.printDays(day);
 
-        //Eleven eleven = new Eleven();
+        //11
         //Console.WriteLine("Введите число ");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(eleven.reverseListNums(x));
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(first.reverseListNums(number1));
 
-        //Twelve twelve = new Twelve();
+        //12
         //Console.WriteLine("Введите число для возведения в степень");
-        //int x = Convert.ToInt32(Console.ReadLine());
+        //int number1 = Convert.ToInt32(Console.ReadLine());
         //Console.Write("Введите степеь возведения");
-        //int y = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(twelve.pow(x, y));
+        //int number2 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(first.pow(number1, number2));
 
-        //Thirteen thirteen = new Thirteen();
+        //13
         //Console.WriteLine("Введите число для проверки");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine(thirteen.equalNum(x));
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine(first.equalNum(number2));
 
 
-        //Fourteen fourteen = new Fourteen();
+        //14
         //Console.WriteLine("Введите число строк треугольника");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //fourteen.leftTriangl(x);
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //first.leftTriangl(number1);
 
-        Fifthteen fifthteen = new Fifthteen();
-        fifthteen.guessGame();
+        //15
+        //first.guessGame();
+
+        //16
+        //Console.WriteLine("Введите число что бы узнать есть ли число в массиве");
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //int[] arr = { 1, 2, 3, 4 };
+        //Console.WriteLine($"Число находится в массиве на {first.findLast(arr, number1)} месте (или его нету если -1)");
+
+
+        //17
+        //int[] arr = { 1, 2, 3, 4 };
+        //Console.WriteLine("Введите число для добавления в массив");
+        //int number1 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Введите позицию для добавления числа в массив (0-4)");
+        //int position = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine($"новый массив: {first.add(arr, number1, position)}");
+
+
+        //18
+        //int[] arr = { 1, 2, 3, 4 };
+        //first.reverse(arr);
+        //Console.WriteLine(arr);
+
+
     }
 }
